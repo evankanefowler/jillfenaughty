@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jill Fenaughty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600;700;800&family=Lora:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-brand">Jill Fenaughty</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="background.html">Background</a></li>
+      <li><a href="about.html">About Jill</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="confidentiality.html">Confidentiality</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="banner">
+    <img src="images/banner-small.jpg" alt="Jill Fenaughty" />
+  </div>
+
+  <div class="sub-header">
+    <div class="sh-title">Therapist &nbsp;&amp;&nbsp; Lawyer</div>
+    <div class="sh-sub">A Dual Lens</div>
+  </div>
+
+  <div class="page-wrap">
+    <div class="page-content">
+
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p><strong>Address</strong><br />
+          123 Edward Street, Suite 912<br />
+          Toronto, Ontario M5G 1E2</p>
+
+          <p><strong>Phone</strong><br />
+          Tel. 416-708-8025</p>
+
+          <p><strong>Email</strong><br />
+          <a href="mailto:info@jillfenaughty.com">info@jillfenaughty.com</a></p>
+
+          <p><strong>Web</strong><br />
+          jillfenaughty.com</p>
+        </div>
+
+        <div class="contact-form">
+          <p class="hint">Please contact me with any questions and to arrange an appointment.</p>
+
+          <!--
+            SETUP: To activate this form, create a free account at formspree.io,
+            create a new form, and replace YOUR_FORM_ID in the action URL below.
+            Set the form email recipient to info@jillfenaughty.com.
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+
+            <label for="message">Your message (optional)</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span>&copy; Jill Fenaughty</span>
+    <a href="#">Terms Of Use</a>
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
